@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    int i,j,n,k,l=0,m,c,r;
+    scanf("%d ",&r);
+    int a[r][r];
+    for(i=0;i<r;i++){
+        for(j=0;j<r;j++){
+            scanf("%d",&a[i][j]);
+        }
+    }
+    for(i=0;i<r;i++){
+        for(j=0;j<r;j++){
+            if(i==j)
+            l=l+a[i][j];
+            else if(i+j==r-1)
+            l=l+a[i][j];
+            
+            
+        }
+    }
+    printf("%d",l);
+}
+    
