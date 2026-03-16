@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int i,j,n=0,k,l=0,m=1,c=0,r;
+    scanf("%d ",&n);
+    for(i=6;i<=n;i++){
+        c=0;
+        for(j=1;j<=i;j++){
+            if(i%j==0)
+            c++;
+        }
+        if(c==2)
+            if(n%i==0){
+            printf("false");
+            return 0;
+            }
+    }
+    printf("true");
+}
+    
