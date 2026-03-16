@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int i,j,n,k,l=0,m,c=0,r;
+    scanf("%d ",&n);
+    int a[n];
+    for(i=0;i<n;i++){
+            scanf("%d",&a[i]);
+    }
+    for(i=0;i<n;i++){
+        c=0;
+      while(a[i]!=0){
+               a[i]=a[i]/10;
+               //printf("%d ",a[i]);
+               c++;
+               //printf("%d ",c);
+           }
+           if(c%2==0)
+           l++;
+       
+    }
+    printf("%d",l);
+   
+}
+    
